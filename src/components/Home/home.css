@@ -1,0 +1,75 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-inline: auto;
+  height: 90vh;
+}
+
+section.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 60%;
+}
+
+section.text h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+section.text p {
+  width: 65%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 150%;
+}
+
+section.text .cta {
+  margin-top: 2rem;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  align-self: flex-start;
+  border: 1px solid var(--primary-color);
+  transition: 0.2s ease-in-out;
+}
+
+section.text .cta:hover {
+  background-color: transparent;
+}
+
+section.image img {
+  width: 100%;
+  width: 800px;
+  position: absolute;
+  top: 34%;
+  left: 40%;
+}
+
+.line,
+.line1,
+.line2 {
+  position: absolute;
+  width: 100px;
+  height: 160%;
+  background-color: var(--primary-color);
+  transform: rotate(50deg);
+  z-index: -999;
+}
+
+.line {
+  right: 20%;
+}
+
+.line1 {
+  right: 0%;
+}
+
+.line2 {
+  left: -15%;
+  top: -40%;
+}
